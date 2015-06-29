@@ -1,7 +1,7 @@
 title: Hexo
 subtitle: null
 description: null
-author: John Doe
+author: Qin Yang
 language: null
 timezone: null
 url: 'http://www.nodepie.com'
@@ -22,7 +22,7 @@ titlecase: false
 external_link: true
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -37,6 +37,6 @@ date_format: YYYY-MM-DD
 time_format: 'HH:mm:ss'
 per_page: 10
 pagination_dir: page
-theme: landscape
+theme: tranquilpeak
 deploy:
   type: null

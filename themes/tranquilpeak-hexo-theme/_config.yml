@@ -37,13 +37,13 @@ sidebar:
             icon: archive
         search:
             title: Search
-            url: /#search
+            url: /search
             icon: search
             # `st-search-show-outputs` classes are used to open swiftype search window
             class: st-search-show-outputs
         about:
             title: About me
-            url: /#about
+            url: /about
             icon: question
     author_links:
         github:
@@ -99,7 +99,7 @@ author:
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production).
     # Overwritten by your gravatar image if `gravatar_image` is enabled
-    picture: cover.jpg
+    picture: cover-1.jpg
 
 # Customization
 # Define the behavior of the sidebar
@@ -116,7 +116,7 @@ read_more_message: Continue reading
 # Message displayed after the <!-- more --> tag or after 300 characters for post with link layout
 go_to_message: Go to the website
 # Your blog cover picture located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-cover_image: cover.jpg
+cover_image: cover-1.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
 favicon:
 # Display an image gallery at the end of a post which have photos variables

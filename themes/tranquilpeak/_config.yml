@@ -35,21 +35,21 @@ sidebar:
             title: Archives
             url: /all-archives
             icon: archive
-        search:
-            title: Search
-            url: /#search
-            icon: search
-            # `st-search-show-outputs` classes are used to open swiftype search window
-            class: st-search-show-outputs
+        # search:
+        #     title: Search
+        #     url: /#search
+        #     icon: search
+        #     # `st-search-show-outputs` classes are used to open swiftype search window
+        #     class: st-search-show-outputs
         about:
             title: About me
             url: /#about
             icon: question
     author_links:
-        # github:
-        #     title: GitHub
-        #     url: https://github.com/
-        #     icon: github
+        github:
+            title: GitHub
+            url: https://github.com/qinyang912
+            icon: github
         # stack_overflow:
         #     title: Stack Overflow
         #     url: http://stackoverflow.com/users/
@@ -74,32 +74,32 @@ sidebar:
         #     title: Mail
         #     url: mailto:
         #     icon: envelope-o
-    rss:
-        rss:
-            title: RSS
-            url: /atom.xml
-            icon: rss
+    # rss:
+    #     rss:
+    #         title: RSS
+    #         url: /atom.xml
+    #         icon: rss
 
 # Header configuration
 # The link at the right of the header is customizable
 # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
 # DON'T edit `header`, `right_link`, `url`, `icon` and `class` variable name
-header:
-    right_link:
-        # url: /#search
-        # icon: search
-        # class: st-search-show-outputs
+# header:
+#     right_link:
+#         url: /#search
+#         icon: search
+#         class: st-search-show-outputs
 
 # Author
 author:
-    email:
+    email: 466168951@qq.com
     bio:
     job:
     location:
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production).
     # Overwritten by your gravatar image if `gravatar_image` is enabled
-    picture:
+    picture: avator.jpg
 
 # Customization
 # Define the behavior of the sidebar

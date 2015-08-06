@@ -40,4 +40,4 @@ ERROR 1416 (22003): Cannot get geometry object from data you send to the GEOMETR
 ```bash
 UPDATE `site` SET `location` = POINT( 0,0 ); #site是表，location是空间字段
 ```
-然后再创建索引
+然后再创建索引.

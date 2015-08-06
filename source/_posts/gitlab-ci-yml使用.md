@@ -8,13 +8,7 @@ thumbnailImage: avator.jpg
 ## 问题
 在工程的根目录添加了`.gitlab-ci.yml`文件之后,gitlab-ci build的状态每次都是pending，各种搜google，各种stackoverflow，都找不到解决办法。
 ### .gitlab-ci.yml文件内容
-```bash
-rspec:
-  script:
-    - uname -a #需要跑的shell脚本
-  only:
-    - master #只有master分支可以执行
-```
+ 
 ## 解决办法
 最后实在没办法，把之前的runner删了，重新建了一个runner，在提示需要哪个通道的时候，选择shell。
 ### 新建runner的脚本

@@ -23,6 +23,13 @@ tags:
 * MULTIPOLYGON
 * MULTIPOLYGON
 
+### 连接数据库需要注意
+使用以下方式连接.
+
+```bash
+mysql -h 192.168.31.202 -u root -p -D learndrive #learndrive是数据库的名称
+```
+
 ### 创建地理空间索引
 在navicat里面无法直接创建SPATIAL索引，需要到shell里用命令行创建.
 

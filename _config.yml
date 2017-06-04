@@ -37,6 +37,6 @@ date_format: YYYY-MM-DD
 time_format: 'HH:mm:ss'
 per_page: 10
 pagination_dir: page
-theme: tranquilpeak
+theme: hexo-theme-laughing
 deploy:
   type: null

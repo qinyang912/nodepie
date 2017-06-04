@@ -4,7 +4,7 @@ description: null
 author: Qin Yang
 language: null
 timezone: null
-url: 'https://nodepie.com'
+url: 'http://nodepie.com'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null

@@ -4,7 +4,7 @@ description: null
 author: Qin Yang
 language: null
 timezone: null
-url: 'http://nodepie.com'
+url: 'https://nodepie.com'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -40,3 +40,11 @@ pagination_dir: page
 theme: hexo-theme-laughing
 deploy:
   type: null
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '

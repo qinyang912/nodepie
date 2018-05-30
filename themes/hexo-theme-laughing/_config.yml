@@ -3,19 +3,19 @@ favicon: /favicon.ico
 # SEO
 keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 # Header
-page_background: http://callfiles.ueibo.com/hexo-theme-laughing/page_background.jpg
+page_background: /assets/images/page_background.jpg
 page_menu_button: dark
-post_background: http://callfiles.ueibo.com/hexo-theme-laughing/post_background.jpg
+post_background: /assets/images/post_background.jpg
 post_menu_button: light
 title_plancehold: 自留地
 author:
   head: /assets/images/zhihu_avatar.jpg
-  signature: code designer
+  signature: 自律，才能更自由
 navication:
   - name: Github
     link: https://github.com/qinyang912
-  - name: 知乎
-    link: https://www.zhihu.com/people/qin-yang-22
+  - name: RSS
+    link: /atom.xml
 # content
 content_width: 800
 # Footer

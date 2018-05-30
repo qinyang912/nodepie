@@ -3,7 +3,7 @@
     label.navi-button.light(for="navi") MENU
   else
     label.navi-button(for="navi") MENU
-  img.background(src=theme.post_background)
+  img.background(src=page.background ? page.background : theme.post_background)
   .post-title
     h1.title #{page.title ? page.title : theme.title_plancehold}
     ul.meta

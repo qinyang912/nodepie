@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "scripts": {
+    "start": "npm run server",
     "server": "hexo server",
     "g": "hexo generate"
   },
@@ -20,6 +21,6 @@
     "hexo-renderer-marked": "^0.2.4",
     "hexo-renderer-pug": "0.0.5",
     "hexo-renderer-stylus": "^0.2.0",
-    "hexo-server": "^0.1.2"
+    "hexo-server": "^1.0.0"
   }
 }

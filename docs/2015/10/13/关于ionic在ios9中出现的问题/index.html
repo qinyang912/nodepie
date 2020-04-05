@@ -7,7 +7,7 @@
   clientID: '2638ec070f57a82545cc',
   clientSecret: 'b0aeaed2b37065dffdc1ac48133d8a950414e6c4',
   accessToken: 'dad4b0a525e1aacd191f17395e9e97f984113e0a',
-  id: window.location.pathname.replace(/\/$/, '').replace(/^\//, '').replace(/\//g, '-'),
+  id: window.location.pathname.replace(/\/$/, '').replace(/^\//, '').replace(/\//g, '-').substr(0, 40),
   repo: 'nodepie',
   owner: 'qinyang912',
   admin: ['qinyang912'],

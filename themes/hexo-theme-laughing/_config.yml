@@ -36,3 +36,13 @@ copyright:
   record: false
   hexo: true
   laughing: true
+
+# gitalk
+gitalk:
+  accessToken: ''
+  clientID: '2638ec070f57a82545cc'
+  clientSecret: 'b0aeaed2b37065dffdc1ac48133d8a950414e6c4'
+  repo: 'nodepie'
+  owner: 'qinyang912'
+  admin: 'qinyang912'
+  

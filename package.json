@@ -22,5 +22,8 @@
     "hexo-renderer-pug": "0.0.5",
     "hexo-renderer-stylus": "^0.2.0",
     "hexo-server": "^1.0.0"
+  },
+  "devDependencies": {
+    "hexo-asset-link": "^2.0.1"
   }
 }

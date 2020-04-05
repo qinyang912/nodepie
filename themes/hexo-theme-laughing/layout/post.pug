@@ -43,3 +43,19 @@ block content
       li
         a(href=url_for(page.next.path))
           i.icon.icon-arror-right
+  link(rel="stylesheet", href="https://unpkg.com/gitalk/dist/gitalk.css")
+  script(src="https://unpkg.com/gitalk/dist/gitalk.min.js")
+  div
+    div(id="gitalk-container", style='max-width:'+ theme.content_width +'px; margin: auto; padding: 0 36px;')
+  script.
+    var gitalk = new Gitalk({
+      clientID: '2638ec070f57a82545cc',
+      clientSecret: 'b0aeaed2b37065dffdc1ac48133d8a950414e6c4',
+      accessToken: 'dad4b0a525e1aacd191f17395e9e97f984113e0a',
+      id: window.location.pathname,
+      repo: 'nodepie',
+      owner: 'qinyang912',
+      admin: 'qinyang912',
+      distractionFreeMode: false
+    })
+    gitalk.render('gitalk-container')

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nodepie.com/"/>
-  <updated>2021-04-06T14:17:54.000Z</updated>
+  <updated>2021-04-07T10:20:03.000Z</updated>
   <id>https://nodepie.com/</id>
   
   <author>
@@ -15,35 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://nodepie.com/2021/04/06/AST/jsoneditor/"/>
-    <id>https://nodepie.com/2021/04/06/AST/jsoneditor/</id>
-    <published>2021-04-06T13:58:59.000Z</published>
-    <updated>2021-04-06T14:17:54.000Z</updated>
-    
-    <content type="html"><![CDATA[// create the editorconst container = document.getElementById("jsoneditor")const options = {    language: 'zh-CN'}const editor = new JSONEditor(container, options)// set jsonconst initialJson = [    {        type: 'Identifier', value: 'const'    }]editor.set(initialJson)editor.setMode('tree')// get jsonconst updatedJson = editor.get()<script src="https://cdnjs.cloudflare.com/ajax/lib/2021/04/06/AST/jsoneditor/9.3.0/jsoneditor.min.js"></script><link href="https://cdnjs.cloudflare.com/ajax/lib/2021/04/06/AST/jsoneditor/9.3.0/jsoneditor.css" rel="stylesheet"><div id="jsoneditor" style="width: 100%;"></div><script src="jsoneditor.js"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          // create the editor
-const container = document.getElementById(&quot;jsoneditor&quot;)
-const options = {
-    language: &#39;zh-CN&#39;
-}
-const editor = new
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>AST</title>

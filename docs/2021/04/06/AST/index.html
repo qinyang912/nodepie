@@ -2,6 +2,7 @@
 <p style="text-align: center;">理解了AST, 就理解了整个前端工具链路</p>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>AST(Abstract Syntax Tree), 抽象语法树, 是源代码的抽象语法结构的树状表现形式.</p>
+<p>抽象语法树是语言无关的, 任何语言都有抽象语法树.</p>
 <p>AST在前端无处不在, 我们熟悉的开发工具几乎全依赖于AST进行开发, webpack, babel, eslint, prettier, istanbul无一不在深度使用AST, 所以学会AST, 你就可以撬动整个工具圈.</p>
 <h2 id="编译器的工作流程"><a href="#编译器的工作流程" class="headerlink" title="编译器的工作流程"></a>编译器的工作流程</h2><p>编译器是AST典型的应用场景, 其最基础的部分就是对AST的处理, 从广义上讲, babel, eslint都属于编译器, 所以让我们从分析一个编译器的工作流程开始, 来建立对AST的基本认识.</p>
 <p><img src="ast-flow.png" alt="img"></p>
@@ -12,10 +13,17 @@
 <li>代码生成</li>
 </ol>
 <p>源代码:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> age = <span class="number">18</span>;</span><br></pre></td></tr></table></figure></p>
-<h3 id="词法分析"><a href="#词法分析" class="headerlink" title="词法分析"></a>词法分析</h3><p>词法分析也叫令牌化(Tokenization), 是在源代码的基础上进行分词断句, 然后生成一连串令牌, 所谓令牌(Token), 其实就是分词断句之后, 对每个单词进行分类, 是属于关键字还是标识符还是标点符号等等. 你可以想象成词法分析就是把你的代码从string类型转换成了数组, 数组的元素就是代码里的单词, 然后对每个单词标记了类型. 大部分编辑器的语法高亮，就是用的词法分析结果.</p>
-<p>但是词法分析结果看不出任何语法信息, 看不出代码的执行先顺序, 所以需要进一步进行语法分析.</p>
+<h3 id="词法分析"><a href="#词法分析" class="headerlink" title="词法分析"></a>词法分析</h3><p>词法分析也叫令牌化(Tokenization), 是在源代码的基础上进行分词断句, 然后生成一连串令牌, 所谓令牌(Token), 其实就是分词断句之后, 对每个单词进行分类, 是属于关键字还是标识符还是标点符号等等. 你可以想象成词法分析就是把你的代码从string类型转换成了数组, 数组的元素就是代码里的单词, 然后对每个单词标记了类型.</p>
+<p>大部分编辑器的语法高亮，就是用的词法分析结果.</p>
+<p>但是词法分析结果缺少一些比较关键的信息:</p>
+<ol>
+<li>没有任何语法信息</li>
+<li>体现不了代码的执行先顺序</li>
+</ol>
+<p>所以需要进一步进行语法分析.</p>
 <figure class="highlight json"><figcaption><span>词法分析结果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123; <span class="attr">"type"</span>: <span class="string">"Keyword"</span>, <span class="attr">"value"</span>: <span class="string">"const"</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">"type"</span>: <span class="string">"Identifier"</span>, <span class="attr">"value"</span>: <span class="string">"age"</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">"type"</span>: <span class="string">"Punctuator"</span>, <span class="attr">"value"</span>: <span class="string">"="</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">"type"</span>: <span class="string">"Numeric"</span>, <span class="attr">"value"</span>: <span class="string">"18"</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">"type"</span>: <span class="string">"Punctuator"</span>, <span class="attr">"value"</span>: <span class="string">";"</span> &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-<h3 id="语法分析"><a href="#语法分析" class="headerlink" title="语法分析"></a>语法分析</h3><p>语法分析也叫解析(Parsing), 是在词法分析的基础上, 把令牌列表转换成抽象语法树. 从下面 <a href="https://astexplorer.net/" target="_blank" rel="noopener">AST Explorer</a> (<a href="https://astexplorer.net/#/gist/3fad609ffc39889a0af69602bc57c0b7/da825e63460326ff79bbb605085a76901239a012" target="_blank" rel="noopener">在新窗口打开</a>)的数据可以看到, 抽象语法树携带了更多的语法信息, 在词法分析的结果里, 我们只能看到代码里有哪些关键字, 有哪些标识符, 但是在抽象语法树里, 我们却能看出这句代码是在做变量声明.</p>
+<h3 id="语法分析"><a href="#语法分析" class="headerlink" title="语法分析"></a>语法分析</h3><p>语法分析也叫解析(Parsing), 是在词法分析的基础上, 把令牌列表转换成抽象语法树.</p>
+<p>从下面 <a href="https://astexplorer.net/" target="_blank" rel="noopener">AST Explorer</a> (<a href="https://astexplorer.net/#/gist/3fad609ffc39889a0af69602bc57c0b7/da825e63460326ff79bbb605085a76901239a012" target="_blank" rel="noopener">在新窗口打开</a>)的数据可以看到, 抽象语法树携带了更多的语法信息, 在词法分析的结果里, 我们只能看到代码里有哪些关键字, 有哪些标识符, 但是在抽象语法树里, 我们却能看出这句代码是在做变量声明.</p>
 <iframe src="https://astexplorer.net/#/gist/3fad609ffc39889a0af69602bc57c0b7/da825e63460326ff79bbb605085a76901239a012" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
 <p>抽象语法树会略去一些无关紧要的信息, 比如代码末尾的<code>;</code>在抽象语法树里没有任何记录, 这也是抽象语法树名字里抽象两个字的由来, 是因为这里的语法并不会表示出真实语法中出现的每个细节.</p>
 <p>联系前面一个步骤, 你可以把这两个步骤想象成DOM树的解析过程, 词法分析就相当于是把HTML代码转换成body, div等各种标签的组合, 而语法分析就相当于是在把各种标签转换成DOM树.</p>

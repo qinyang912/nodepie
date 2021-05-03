@@ -18,7 +18,7 @@ AST(Abstract Syntax Tree), 抽象语法树, 是源代码的抽象语法结构的
 AST在前端无处不在, 我们熟悉的开发工具几乎全依赖于AST进行开发, webpack, babel, eslint, prettier, istanbul无一不在深度使用AST, 所以学会AST, 你就可以撬动整个工具圈.
 
 ## 编译器的工作流程
-编译器是AST典型的应用场景, 其最基础的部分就是对AST的处理, 从广义上讲, babel, eslint都属于编译器, 所以让我们从分析一个编译器的工作流程开始, 来建立对AST的基本认识.
+编译器是AST典型的应用场景, 其最基础的部分就是对AST的处理, 从广义上讲, babel, eslint都属于编译器, 所以我们从分析一个编译器的工作流开始, 来建立对AST的基本认识.
 
 ![img](ast-flow.png)
 

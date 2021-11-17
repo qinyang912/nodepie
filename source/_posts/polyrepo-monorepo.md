@@ -8,7 +8,7 @@ background: polyrepo-vs-monorepo.png
 
 所谓monorepo就是同一个仓库管理多个项目的代码，所谓polyrepo就是多个项目的代码分散在多个仓库。
 
-日事清从19年底开始做微应用拆分到现在整整2年时间，这期间针对微应用打包构建做了很多优化，引入systemjs，抽离公共依赖，统一构建环境等等。随着项目的发展，现在微应用的数量已经突破了30个，而polyrepo模式给代码管理带来了巨大的麻烦，尤其是每次要统一升级基础构建的时候，得挨个在每个微应用里执行同样的命令，想想同样的工作要重复几十遍，简直就是噩梦。所以如何更高效的管理微应用成了当前需要解决的一个痛点。在了解了vue,、babel等大型开源项目的解决方案之后，发现monorepo已经在社区有了比较广泛的应用。前端生态里的工具，比如eslint,、babel等也支持monorepo项目的配置，随着npm@7.0的发布，workspace也成了npm的官方支持，所以现在做monorepo的改造也成了比较水到渠成的事情。
+日事清从19年底开始做微应用拆分到现在整整2年时间，这期间针对微应用打包构建做了很多优化，引入systemjs，抽离公共依赖，统一构建环境等等。随着项目的发展，现在微应用的数量已经突破了30个，而polyrepo模式给代码管理带来了巨大的麻烦，尤其是每次要统一升级基础构建的时候，得挨个在每个微应用里执行同样的命令，想想同样的工作要重复几十遍，简直就是噩梦。所以如何更高效的管理微应用成了当前需要解决的一个痛点。在了解了[vue](https://github.com/vuejs/vue-next),、[babel](https://github.com/babel/babel)等大型开源项目的解决方案之后，发现monorepo已经在社区有了比较广泛的应用。前端生态里的工具，比如eslint,、babel等也支持monorepo项目的配置，随着[npm@7.0](https://github.com/npm/cli/releases)的发布，workspace也成了npm的官方支持，所以现在做monorepo的改造也成了比较水到渠成的事情。
 
 # monorepo vs polyrepo
 

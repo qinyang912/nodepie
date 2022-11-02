@@ -20,7 +20,7 @@
     "hexo-renderer-ejs": "^0.1.0",
     "hexo-renderer-marked": "^0.2.4",
     "hexo-renderer-pug": "0.0.5",
-    "hexo-renderer-stylus": "^0.2.0",
+    "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^1.0.0"
   },
   "devDependencies": {

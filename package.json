@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.9.0"
+    "version": "7.1.1"
   },
   "scripts": {
     "start": "npm run server",
@@ -11,19 +11,19 @@
     "g": "hexo generate"
   },
   "dependencies": {
-    "hexo": "^3.8.0",
-    "hexo-generator-archive": "^0.1.2",
-    "hexo-generator-category": "^0.1.2",
-    "hexo-generator-feed": "^1.2.2",
-    "hexo-generator-index": "^0.1.2",
-    "hexo-generator-tag": "^0.1.1",
-    "hexo-renderer-ejs": "^0.1.0",
-    "hexo-renderer-marked": "^0.2.4",
-    "hexo-renderer-pug": "0.0.5",
-    "hexo-renderer-stylus": "^0.2.0",
-    "hexo-server": "^1.0.0"
+    "hexo": "^7.1.1",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.2.0",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0"
   },
   "devDependencies": {
-    "hexo-asset-link": "^2.0.1"
+    "hexo-asset-link": "^2.2.3"
   }
 }

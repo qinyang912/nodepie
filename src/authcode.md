@@ -115,5 +115,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 <footer class="site-footer">
   <div class="container">
     <div class="footer-left">© 2025 AuthCode</div>
+    <div class="footer-right"><a href="/authcode-privacy">隐私政策</a></div>
   </div>
 </footer>

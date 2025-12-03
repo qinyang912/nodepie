@@ -45,6 +45,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
     </div>
     <nav class="actions">
       <a class="btn primary" href="#download">下载</a>
+      <a class="btn" href="/authcode.html#support">支持</a>
       <a class="btn" href="https://github.com/qinyang912" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </div>
@@ -105,7 +106,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 <p>我们可能根据产品或法律要求更新本隐私政策。重大变更将通过应用内或本页面进行提示。继续使用应用即表示您接受更新后的政策。</p>
 
 <h2>联系我们</h2>
-<p>如对本隐私政策有任何疑问或请求，您可以通过我们的 <a href="https://apps.apple.com/cn/app/id6755983035" target="_blank" rel="noopener">App Store 页面</a> 或 <a href="https://github.com/qinyang912" target="_blank" rel="noopener">GitHub</a> 联系我们。</p>
+<p>如对隐私或使用有疑问，或需要技术支持，您可以通过以下方式与我们联系：</p>
+<ul>
+  <li>电子邮箱：<a href="mailto:wannengxin@gmail.com">wannengxin@gmail.com</a></li>
+  <li>问题反馈：<a href="https://github.com/qinyang912/authcode-support/issues" target="_blank" rel="noopener">GitHub Issues</a></li>
+  <li>支持页面：<a href="/authcode.html#support">帮助与支持</a></li>
+  <li>分发渠道：<a href="https://apps.apple.com/cn/app/id6755983035" target="_blank" rel="noopener">App Store 页面</a></li>
+  </ul>
+<p>响应时间：工作日 24 小时内；支持语言：中文、英文。</p>
     </div>
   </section>
 
@@ -121,6 +129,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 <footer class="site-footer">
   <div class="container">
     <div class="footer-left">© 2025 AuthCode</div>
-    <div class="footer-right"><a href="/authcode-privacy">隐私政策</a></div>
+    <div class="footer-right"><a href="/authcode.html#support">支持</a> · <a href="/authcode-privacy">隐私政策</a></div>
   </div>
 </footer>

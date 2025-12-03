@@ -38,6 +38,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 .grid .note{grid-column:1/-1;text-align:center;color:var(--muted);font-size:14px}
 .download{padding:32px 0;border-top:1px solid var(--border)}
 .download h2{font-size:22px;margin:0 0 12px}
+.support{padding:32px 0;border-top:1px solid var(--border)}
+.support h2{font-size:22px;margin:0 0 12px}
+.support p{margin:8px 0;color:#334155;line-height:1.7}
+.support ul{margin:8px 0 16px;padding-left:18px;color:#334155}
+.support li{margin:6px 0}
+.faq{padding:32px 0;border-top:1px solid var(--border)}
+.faq h2{font-size:22px;margin:0 0 12px}
+.faq h3{font-size:18px;margin:18px 0 8px;font-weight:700}
+.faq p{margin:8px 0;color:#334155;line-height:1.7}
+.faq ul{margin:8px 0 16px;padding-left:18px;color:#334155}
+.faq li{margin:6px 0}
 .site-footer{padding:24px 0;border-top:1px solid var(--border)}
 .site-footer .container{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .site-footer a{color:inherit;text-decoration:none}
@@ -53,6 +64,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
     </div>
     <nav class="actions">
       <a class="btn primary" href="#download">下载</a>
+      <a class="btn" href="#support">支持</a>
       <a class="btn" href="https://github.com/qinyang912" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </div>
@@ -103,6 +115,33 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
     </div>
   </section>
 
+  <section id="support" class="support">
+    <div class="container">
+      <h2>帮助与支持</h2>
+      <p>遇到问题或需要帮助？您可以通过以下方式联系我们：</p>
+      <ul>
+        <li>电子邮箱：<a href="mailto:wannengxin@gmail.com">wannengxin@gmail.com</a></li>
+        <li>问题反馈：<a href="https://github.com/qinyang912/authcode-support/issues" target="_blank" rel="noopener">GitHub Issues</a></li>
+        <li>使用指南：请参阅下方常见问题</li>
+      </ul>
+      <p>响应时间：工作日 24 小时内；支持语言：中文、英文。</p>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>常见问题</h2>
+      <h3>如何添加 2FA 账户？</h3>
+      <p>在应用内点击“添加”，使用相机扫描二维码或手动输入密钥与参数即可。</p>
+      <h3>如何在新设备上迁移数据？</h3>
+      <p>在旧设备中使用导出/备份功能生成文件，并在新设备中导入该文件完成迁移。</p>
+      <h3>我的数据是否会上传到服务器？</h3>
+      <p>不会。应用本地生成验证码，不会上传您的 2FA 信息。详见<a href="/authcode-privacy">隐私政策</a>。</p>
+      <h3>忘记密钥或丢失设备怎么办？</h3>
+      <p>请联系对应服务提供商的账户支持流程。我们无法恢复第三方服务的 2FA 密钥。</p>
+    </div>
+  </section>
+
   <section id="download" class="download">
     <div class="container">
       <h2>下载</h2>
@@ -115,6 +154,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 <footer class="site-footer">
   <div class="container">
     <div class="footer-left">© 2025 AuthCode</div>
-    <div class="footer-right"><a href="/authcode-privacy">隐私政策</a></div>
+    <div class="footer-right"><a href="#support">支持</a> · <a href="/authcode-privacy">隐私政策</a></div>
   </div>
 </footer>

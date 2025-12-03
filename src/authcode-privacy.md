@@ -34,7 +34,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 .site-footer{padding:24px 0;border-top:1px solid var(--border)}
 .site-footer .container{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .site-footer a{color:inherit;text-decoration:none}
+/* More menu */
+.actions .more{display:none}
+.more{position:relative}
+.more summary{list-style:none}
+summary::-webkit-details-marker{display:none}
+.more .menu{position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--border);border-radius:12px;min-width:160px;padding:8px;box-shadow:0 16px 24px rgba(15,23,42,.08);display:flex;flex-direction:column;gap:8px;z-index:20}
+.more .menu a{display:block;height:auto;padding:10px 12px;border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none}
+.more .menu a:hover{background:#f8fafc}
 @media (max-width:640px){.hero h1{font-size:26px}.actions{gap:8px}.btn{height:36px;padding:0 14px}.site-header .container{height:52px}}
+@media (max-width:640px){.actions .btn[data-collapse]{display:none}.actions .more{display:inline-flex}}
 </style>
 
 <header class="site-header">
@@ -45,8 +54,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
     </div>
     <nav class="actions">
       <a class="btn primary" href="#download">下载</a>
-      <a class="btn" href="/authcode.html#support">支持</a>
-      <a class="btn" href="https://github.com/qinyang912" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" data-collapse href="/authcode.html#support">支持</a>
+      <a class="btn" data-collapse href="https://github.com/qinyang912" target="_blank" rel="noopener">GitHub</a>
+      <details class="more">
+        <summary class="btn">更多</summary>
+        <div class="menu" role="menu">
+          <a href="/authcode.html#support">支持</a>
+          <a href="https://github.com/qinyang912" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </details>
     </nav>
   </div>
   </header>

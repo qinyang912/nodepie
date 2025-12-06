@@ -11,6 +11,8 @@ export default defineClientConfig({
       localStorage.setItem('lang', l)
       document.body.setAttribute('data-lang', l)
       document.documentElement.setAttribute('lang', l === 'zh' ? 'zh-CN' : 'en-US')
+      const root = document.querySelector('.authcode-layout') as HTMLElement | null
+      if (root) root.setAttribute('data-lang', l)
     }
     const init = () => {
       const l = localStorage.getItem('lang') || 'en'

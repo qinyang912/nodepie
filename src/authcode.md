@@ -62,17 +62,29 @@ title: AuthCode
     <div class="container">
       <h2><span data-lang="en">Screenshots</span><span data-lang="zh">应用截图</span></h2>
       <div class="grid">
-        <a href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-53-40-862Z.jpg" target="_blank" rel="noopener">
+        <a data-lang="zh" href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-53-40-862Z.jpg" target="_blank" rel="noopener">
           <img src="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-53-40-862Z.jpg" alt="应用截图 1">
         </a>
-        <a href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-55-04-021Z.jpg" target="_blank" rel="noopener">
+        <a data-lang="zh" href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-55-04-021Z.jpg" target="_blank" rel="noopener">
           <img src="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-55-04-021Z.jpg" alt="应用截图 2">
         </a>
-        <a href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-56-24-314Z.jpg" target="_blank" rel="noopener">
+        <a data-lang="zh" href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-56-24-314Z.jpg" target="_blank" rel="noopener">
           <img src="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-56-24-314Z.jpg" alt="应用截图 3">
         </a>
-        <a href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-58-01-090Z.jpg" target="_blank" rel="noopener">
+        <a data-lang="zh" href="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-58-01-090Z.jpg" target="_blank" rel="noopener">
           <img src="/assets/authcode/appstore-iphone65-portrait-1242x2688-2025-12-01T13-58-01-090Z.jpg" alt="应用截图 4">
+        </a>
+        <a data-lang="en" href="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-48-11-872Z.jpg" target="_blank" rel="noopener">
+          <img src="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-48-11-872Z.jpg" alt="Screenshot 1">
+        </a>
+        <a data-lang="en" href="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-48-38-555Z.jpg" target="_blank" rel="noopener">
+          <img src="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-48-38-555Z.jpg" alt="Screenshot 2">
+        </a>
+        <a data-lang="en" href="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-48-58-281Z.jpg" target="_blank" rel="noopener">
+          <img src="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-48-58-281Z.jpg" alt="Screenshot 3">
+        </a>
+        <a data-lang="en" href="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-49-26-047Z.jpg" target="_blank" rel="noopener">
+          <img src="/assets/authcode/en/appstore-iphone65-portrait-1242x2688-2025-12-06T04-49-26-047Z.jpg" alt="Screenshot 4">
         </a>
         <div class="note"><span data-lang="en">Click any image to view full size</span><span data-lang="zh">点击任意图片可查看原图</span></div>
       </div>
@@ -121,4 +133,3 @@ title: AuthCode
     <div class="footer-right"><a href="#support"><span data-lang="en">Support</span><span data-lang="zh">支持</span></a> · <a href="/authcode-privacy"><span data-lang="en">Privacy Policy</span><span data-lang="zh">隐私政策</span></a></div>
   </div>
 </footer>
-

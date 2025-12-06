@@ -12,5 +12,4 @@ export default {
 
 <style>
 .authcode-layout{min-height:100vh}
-html,body{background:#ffffff}
 </style>
